@@ -24,8 +24,7 @@ def first_choice():
     print("You see two paths. Do you go left or right?")
     choice = input("> ")
     if choice.lower() == "left":
-        print("You encounter a friendly wizard who offers to help you.")
-        # Add logic here for wizard encounter.
+        wizard_encounter() # Goes to wizard encounter if "left"
     elif choice.lower() == "right":
         print("A wild, ferocious bear blocks your path! Game Over.")
         # Add logic here for bear encounter.
