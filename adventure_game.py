@@ -6,6 +6,8 @@ def intro():
     print("Make your choices wisely as danger lurks at every turn!")
     print("Let's begin the adventure...\n")
 
+def wizard_encounter():
+
 def first_choice():
     print("You see two paths. Do you go left or right?")
     choice = input("> ")
