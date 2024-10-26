@@ -6,6 +6,8 @@ def intro():
     print("Make your choices wisely as danger lurks at every turn!")
     print("Let's begin the adventure...\n")
 
+def hidden_path():
+
 def wizard_encounter():
     print("The wizard offers you a magical map to help guide you through the forest.")
     print("Do you accept the map? Type 'yes' or 'no'")
