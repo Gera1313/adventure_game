@@ -2,12 +2,6 @@
 import random
 inventory = []
 
-def intro():
-    print("Welcome to the Mystic Forest!")
-    print("Your mission is to find the hidden treasure and escape safely.")
-    print("Make your choices wisely as danger lurks at every turn!")
-    print("Let's begin the adventure...\n")
-
 def random_event():
     event = random.choice(["find_potion", "meet_ally", "nothing_happens"])
     if event == "find_potion":
@@ -17,7 +11,6 @@ def random_event():
         print("A friendly creature appears and offers to guide you for a while.")
     else:
         print("Nothing unusual happens on your path.")
-
 
 def restart_game():
     print("\nWould you like to play again? Type 'yes' or 'no'")
@@ -65,6 +58,12 @@ def first_choice():
     else:
         print("Invalid choice. Please type 'left' or 'right'.")
         first_choice()  # Ask again if the input was invalid
+
+    def intro():
+    print("Welcome to the Mystic Forest!")
+    print("Your mission is to find the hidden treasure and escape safely.")
+    print("Make your choices wisely as danger lurks at every turn!")
+    print("Let's begin the adventure...\n")
 
 
 # calls the intro function to display messages
