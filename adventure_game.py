@@ -9,7 +9,14 @@ def check_ending():
         print("Although you didn’t find the treasure, you made it out of the forest safely thanks to the wizard’s map.")
     else:
         print("Lost in the forest with no map or treasure, you wander endlessly. Game Over.")
-
+    
+    # Ask if the player wants to restart
+    choice = input("Would you like to play again? Type 'yes' or 'no' > ")
+    if choice.lower() == 'yes':
+        inventory.clear()  # Clear the inventory for a fresh start
+        start_game()  # Restart the game from the beginning
+    else:
+        print("Thanks for playing! Goodbye.")
 
 def random_event():
     event = random.choice(["find_potion", "meet_ally", "nothing_happens"])
@@ -50,6 +57,12 @@ def hidden_path():
         else:
             print("Invalid choice. Please type 'open' or 'leave'.")
             hidden_path()  # Loop back for a valid choice
+
+    else:
+        print("Without a map, you wander aimlessly and eventually get lost. Game Over.")
+    
+    # Check the final ending based on inventory and choices
+    check_ending()
 
 def wizard_encounter():
     print("The wizard offers you a magical map to help guide you through the forest.")
