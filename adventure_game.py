@@ -39,6 +39,9 @@ def hidden_path():
     if 'Map' in inventory:
         print("Using the map, you find a shortcut to the treasure!")
         print("After a short journey, you arrive at the treasure chest. Congratulations!")
+        
+        # Adding a choice at the treasure
+        
         inventory.append("Treasure Chest")
     else:
         print("Without a map, you wander aimlessly and eventually get lost. Game Over.")
