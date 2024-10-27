@@ -1,4 +1,5 @@
 # start the game
+inventory = []
 
 def intro():
     print("Welcome to the Mystic Forest!")
@@ -36,8 +37,7 @@ def hidden_path():
 
 def wizard_encounter():
     print("The wizard offers you a magical map to help guide you through the forest.")
-    print("Do you accept the map? Type 'yes' or 'no'")
-    choice = input("> ")
+    choice = input("Do you accept the map? Type 'yes' or 'no' > ")
     if choice.lower() == "yes":
         print("You take the map and thank the wizard. It reveals a hidden path to the treasure!")
         hidden_path()
