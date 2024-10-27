@@ -7,6 +7,17 @@ def intro():
     print("Let's begin the adventure...\n")
 
 def hidden_path():
+    print("You follow the hidden path revealed by the magical map.")
+    print("After a while, you arrive at a mysterious cave. Do you enter the cave or continue along the path?")
+    choice = input("> ")
+    if choice.lower() == "enter":
+        print("Inside the cave, you discover a treasure chest filled with gold! Congratulations, you found the treasure!")
+        print("You win!")
+    elif choice.lower() == "continue":
+        print("You continue along the path, but it leads to a cliff with no way down. Game Over.")
+    else:
+        print("Invalid choice. Please type 'enter' or 'continue'.")
+        hidden_path()  # Ask again
 
 def wizard_encounter():
     print("The wizard offers you a magical map to help guide you through the forest.")
