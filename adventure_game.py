@@ -71,7 +71,7 @@ def first_choice():
         print("Invalid choice. Please type 'left' or 'right'.")
         first_choice()  # Ask again if the input was invalid
 
-    def intro():
+def intro():
     print("Welcome to the Mystic Forest!")
     print("Your mission is to find the hidden treasure and escape safely.")
     print("Make your choices wisely as danger lurks at every turn!")
