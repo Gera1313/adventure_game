@@ -39,15 +39,13 @@ def wizard_encounter():
     print("The wizard offers you a magical map to help guide you through the forest.")
     choice = input("Do you accept the map? Type 'yes' or 'no' > ")
     if choice.lower() == "yes":
-        print("You take the map and thank the wizard. It reveals a hidden path to the treasure!")
-        hidden_path()
+        print("You take the map and thank the wizard.")
+        inventory.append('Map')  # Add map to inventory
     elif choice.lower() == "no":
         print("You politely decline. The wizard wishes you luck and disappears.")
-        print("You continue your journey but quickly find yourself lost. Game Over.")
-        restart_game()
     else:
         print("Invalid choice. Please type 'yes' or 'no'.")
-        wizard_encounter()  # Ask again
+        wizard_encounter()  # Ask again if the input was invalid
 
 def first_choice():
     print("You see two paths. Do you go left or right?")
