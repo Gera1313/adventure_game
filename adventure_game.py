@@ -1,4 +1,5 @@
 # start the game
+import random
 inventory = []
 
 def intro():
