@@ -6,7 +6,7 @@ def check_ending():
     if "Treasure Chest" in inventory:
         print("Congratulations, you found the hidden treasure and escaped safely with riches beyond your wildest dreams!")
     elif "Map" in inventory:
-        print("Although you didn’t find the treasure, you made it out of the forest safely thanks to the wizard’s map.")
+        print("Although you didn not find the treasure, you made it out of the forest safely thanks to the wizard’s map.")
     else:
         print("Lost in the forest with no map or treasure, you wander endlessly. Game Over.")
     
@@ -14,7 +14,7 @@ def check_ending():
     choice = input("Would you like to play again? Type 'yes' or 'no' > ")
     if choice.lower() == 'yes':
         inventory.clear()  # Clear the inventory for a fresh start
-        start_game()  # Restart the game from the beginning
+        restart_game()  # Restart the game from the beginning
     else:
         print("Thanks for playing! Goodbye.")
 
@@ -45,7 +45,7 @@ def hidden_path():
     print("You follow the hidden path revealed by the magical map.")
     if 'Map' in inventory:
         print("Using the map, you find a shortcut to the treasure!")
-        print("After a short journey, you arrive at the treasure chest. Congratulations!")
+        print("After a short journey, you arrive at a treasure chest in a clearing.")
         
         # Adding a choice at the treasure
         choice = input("Do you open the chest or leave it? Type 'open' or 'leave' > ")
@@ -59,10 +59,7 @@ def hidden_path():
             hidden_path()  # Loop back for a valid choice
 
     else:
-        print("Without a map, you wander aimlessly and eventually get lost. Game Over.")
-    
-    # Check the final ending based on inventory and choices
-    check_ending()
+        print("Without a map, you wander aimlessly and eventually get lost.")
 
 def wizard_encounter():
     print("The wizard offers you a magical map to help guide you through the forest.")
