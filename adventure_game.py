@@ -41,7 +41,11 @@ def hidden_path():
         print("After a short journey, you arrive at the treasure chest. Congratulations!")
         
         # Adding a choice at the treasure
-        
+        choice = input("Do you open the chest or leave it? Type 'open' or 'leave' > ")
+        if choice.lower() == "open":
+            print("You open the chest and discover it's filled with gold and gems!")
+            inventory.append("Treasure Chest")  # Add the treasure to the inventory
+
         inventory.append("Treasure Chest")
     else:
         print("Without a map, you wander aimlessly and eventually get lost. Game Over.")
