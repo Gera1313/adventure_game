@@ -8,6 +8,17 @@ def intro():
     print("Make your choices wisely as danger lurks at every turn!")
     print("Let's begin the adventure...\n")
 
+    def random_event():
+    event = random.choice(["find_potion", "meet_ally", "nothing_happens"])
+    if event == "find_potion":
+        print("You find a healing potion on the ground and pick it up.")
+        inventory.append("Potion")  # Add potion to inventory
+    elif event == "meet_ally":
+        print("A friendly creature appears and offers to guide you for a while.")
+    else:
+        print("Nothing unusual happens on your path.")
+
+
 def restart_game():
     print("\nWould you like to play again? Type 'yes' or 'no'")
     choice = input("> ")
