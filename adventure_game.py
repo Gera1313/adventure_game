@@ -22,18 +22,11 @@ def restart_game():
 
 def hidden_path():
     print("You follow the hidden path revealed by the magical map.")
-    print("After a while, you arrive at a mysterious cave. Do you enter the cave or continue along the path?")
-    choice = input("> ")
-    if choice.lower() == "enter":
-        print("Inside the cave, you discover a treasure chest filled with gold! Congratulations, you found the treasure!")
-        print("You win!")
-        restart_game()
-    elif choice.lower() == "continue":
-        print("You continue along the path, but it leads to a cliff with no way down. Game Over.")
-        restart_game()
+    if 'Map' in inventory:
+        print("Using the map, you find a shortcut to the treasure!")
+        print("After a short journey, you arrive at the treasure chest. Congratulations!")
     else:
-        print("Invalid choice. Please type 'enter' or 'continue'.")
-        hidden_path()  # Ask again
+        print("Without a map, you wander aimlessly and eventually get lost. Game Over.")
 
 def wizard_encounter():
     print("The wizard offers you a magical map to help guide you through the forest.")
