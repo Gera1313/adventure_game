@@ -25,7 +25,7 @@ def wizard_encounter():
     choice = input("> ")
     if choice.lower() == "yes":
         print("You take the map and thank the wizard. It reveals a hidden path to the treasure!")
-        # Add more logic here later for the hidden path encounter
+        hidden_path()
     elif choice.lower() == "no":
         print("You politely decline. The wizard wishes you luck and disappears.")
         # Add more logic here later for the path without the map
