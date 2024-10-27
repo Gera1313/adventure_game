@@ -6,7 +6,7 @@ def check_ending():
     if "Treasure Chest" in inventory:
         print("Congratulations, you found the hidden treasure and escaped safely with riches beyond your wildest dreams!")
     elif "Map" in inventory:
-        print("Although you didn not find the treasure, you made it out of the forest safely thanks to the wizard’s map.")
+        print("Although you didn't find the treasure, you made it out of the forest safely thanks to the wizard’s map.")  # Fixed typo
     else:
         print("Lost in the forest with no map or treasure, you wander endlessly. Game Over.")
     
