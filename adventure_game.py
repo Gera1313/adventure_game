@@ -44,13 +44,15 @@ def first_choice():
     print("You see two paths. Do you go left or right?")
     choice = input("> ")
     if choice.lower() == "left":
-        wizard_encounter() # Goes to wizard encounter if "left"
+        wizard_encounter()  # Go to wizard encounter if player chooses left
+        hidden_path()  # Continue to hidden path after meeting the wizard
     elif choice.lower() == "right":
-        print("A wild, ferocious bear blocks your path! Game Over.")
+        print("A wild bear blocks your path! Game Over.")
         restart_game()
     else:
         print("Invalid choice. Please type 'left' or 'right'.")
-        first_choice() # Ask again
+        first_choice()  # Ask again if the input was invalid
+
 
 # calls the intro function to display messages
 intro()
