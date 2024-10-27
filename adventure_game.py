@@ -29,17 +29,9 @@ def random_event():
         print("Nothing unusual happens on your path.")
 
 def restart_game():
-    print("\nWould you like to play again? Type 'yes' or 'no'")
-    choice = input("> ")
-    if choice.lower() == "yes":
-        print("\nStarting a new adventure!\n")
-        intro()
-        first_choice()
-    elif choice.lower() == "no":
-        print("Thanks for playing! Goodbye!")
-    else:
-        print("Invalid choice. Please type 'yes' or 'no'.")
-        restart_game()  # Ask again
+    print("\nStarting a new adventure!\n")
+    intro()
+    first_choice()
 
 def hidden_path():
     print("You follow the hidden path revealed by the magical map.")
@@ -52,14 +44,16 @@ def hidden_path():
         if choice.lower() == "open":
             print("You open the chest and discover it's filled with gold and gems!")
             inventory.append("Treasure Chest")  # Add the treasure to the inventory
+            check_ending()  # Check the ending after opening the chest
         elif choice.lower() == "leave":
             print("You decide to leave the chest and walk away, content with your journey.")
+            check_ending()  # Check the ending after leaving the chest
         else:
             print("Invalid choice. Please type 'open' or 'leave'.")
             hidden_path()  # Loop back for a valid choice
-
     else:
         print("Without a map, you wander aimlessly and eventually get lost.")
+        check_ending()  # Check the ending if the player doesn't have a map
 
 def wizard_encounter():
     print("The wizard offers you a magical map to help guide you through the forest.")
@@ -82,7 +76,7 @@ def first_choice():
         hidden_path()  # Continue to hidden path after meeting the wizard
     elif choice.lower() == "right":
         print("A wild bear blocks your path! Game Over.")
-        restart_game()
+        check_ending()  # Check the ending if the player chooses right
     else:
         print("Invalid choice. Please type 'left' or 'right'.")
         first_choice()  # Ask again if the input was invalid
