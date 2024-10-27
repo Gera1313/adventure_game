@@ -27,3 +27,19 @@ In this short text-based adventure game, you navigate through the Mystic Forest,
 2. Interact with characters and objects.
 3. Make choices that will affect the story.
 4. Reach an ending and decide if you'd like to play again!
+
+## How to Play
+
+To run the game, follow these steps:
+
+1. Clone this repository to your local machine:
+   ```bash
+   git clone https://github.com/yourusername/adventure_game.git
+
+2. Navigate to the game directory:
+   ```bash
+   cd adventure_game
+
+3. Run the game with the following command: 
+    ```
+   python adventure_game.py
