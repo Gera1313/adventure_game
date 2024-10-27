@@ -8,7 +8,7 @@ def intro():
     print("Make your choices wisely as danger lurks at every turn!")
     print("Let's begin the adventure...\n")
 
-    def random_event():
+def random_event():
     event = random.choice(["find_potion", "meet_ally", "nothing_happens"])
     if event == "find_potion":
         print("You find a healing potion on the ground and pick it up.")
@@ -57,6 +57,7 @@ def first_choice():
     choice = input("> ")
     if choice.lower() == "left":
         wizard_encounter()  # Go to wizard encounter if player chooses left
+        random_event()  # Trigger a random event after the wizard encounter
         hidden_path()  # Continue to hidden path after meeting the wizard
     elif choice.lower() == "right":
         print("A wild bear blocks your path! Game Over.")
