@@ -7,7 +7,17 @@ def intro():
     print("Let's begin the adventure...\n")
 
 def restart_game():
-    print()
+    print("\nWould you like to play again? Type 'yes' or 'no'")
+    choice = input("> ")
+    if choice.lower() == "yes":
+        print("\nStarting a new adventure!\n")
+        intro()
+        first_choice()
+    elif choice.lower() == "no":
+        print("Thanks for playing! Goodbye!")
+    else:
+        print("Invalid choice. Please type 'yes' or 'no'.")
+        restart_game()  # Ask again
 
 def hidden_path():
     print("You follow the hidden path revealed by the magical map.")
