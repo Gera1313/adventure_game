@@ -12,4 +12,18 @@ Welcome to the **Mystic Forest Adventure Game**! Embark on a thrilling journey t
 
 ## Description
 
-In this text-based adventure game, you navigate through the Mystic Forest, making choices that lead you to various outcomes. Encounter wizards, discover treasures, and face challenges as you seek the ultimate reward. Your decisions shape the narrative and lead to multiple endings!
+In this short text-based adventure game, you navigate through the Mystic Forest, making choices that lead you to various outcomes. Encounter wizards, discover treasures, and face challenges as you seek the ultimate reward. Your decisions shape the narrative and lead to multiple endings!
+
+## Features
+
+- Engaging story with multiple paths and outcomes
+- Random events that add variability to gameplay
+- Inventory system for items collected during the adventure
+- Option to restart the game and explore different choices
+
+## Gameplay
+
+1. Begin your journey by choosing a path.
+2. Interact with characters and objects.
+3. Make choices that will affect the story.
+4. Reach an ending and decide if you'd like to play again!
