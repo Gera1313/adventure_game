@@ -12,7 +12,7 @@ Welcome to the **Mystic Forest Adventure Game**! Embark on a thrilling journey t
 
 ## Description
 
-In this short text-based adventure game, you navigate through the Mystic Forest, making choices that lead you to various outcomes. Encounter wizards, discover treasures, and face challenges as you seek the ultimate reward. Your decisions shape the narrative and lead to multiple endings!
+In this SHORT text-based adventure game, you navigate through the Mystic Forest, making choices that lead you to various outcomes. Encounter wizards, discover treasures, and face challenges as you seek the ultimate reward. Your decisions shape the narrative and lead to multiple endings!
 
 ## Features
 
@@ -43,3 +43,12 @@ To run the game, follow these steps:
 3. Run the game with the following command: 
     ```
    python adventure_game.py
+
+## Requirements
+
+- Python 3.x
+- No additional libraries required
+
+## License
+
+# [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
