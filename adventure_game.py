@@ -45,12 +45,11 @@ def hidden_path():
         if choice.lower() == "open":
             print("You open the chest and discover it's filled with gold and gems!")
             inventory.append("Treasure Chest")  # Add the treasure to the inventory
-
-        inventory.append("Treasure Chest")
-    else:
-        print("Without a map, you wander aimlessly and eventually get lost. Game Over.")
-
-    check_ending()
+        elif choice.lower() == "leave":
+            print("You decide to leave the chest and walk away, content with your journey.")
+        else:
+            print("Invalid choice. Please type 'open' or 'leave'.")
+            hidden_path()  # Loop back for a valid choice
 
 def wizard_encounter():
     print("The wizard offers you a magical map to help guide you through the forest.")
