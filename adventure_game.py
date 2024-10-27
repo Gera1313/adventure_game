@@ -6,6 +6,9 @@ def intro():
     print("Make your choices wisely as danger lurks at every turn!")
     print("Let's begin the adventure...\n")
 
+def restart_game():
+    print()
+
 def hidden_path():
     print("You follow the hidden path revealed by the magical map.")
     print("After a while, you arrive at a mysterious cave. Do you enter the cave or continue along the path?")
