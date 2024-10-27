@@ -39,8 +39,11 @@ def hidden_path():
     if 'Map' in inventory:
         print("Using the map, you find a shortcut to the treasure!")
         print("After a short journey, you arrive at the treasure chest. Congratulations!")
+        inventory.append("Treasure Chest")
     else:
         print("Without a map, you wander aimlessly and eventually get lost. Game Over.")
+
+    check_ending()
 
 def wizard_encounter():
     print("The wizard offers you a magical map to help guide you through the forest.")
