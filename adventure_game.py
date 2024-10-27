@@ -26,8 +26,10 @@ def hidden_path():
     if choice.lower() == "enter":
         print("Inside the cave, you discover a treasure chest filled with gold! Congratulations, you found the treasure!")
         print("You win!")
+        restart_game()
     elif choice.lower() == "continue":
         print("You continue along the path, but it leads to a cliff with no way down. Game Over.")
+        restart_game()
     else:
         print("Invalid choice. Please type 'enter' or 'continue'.")
         hidden_path()  # Ask again
@@ -41,7 +43,8 @@ def wizard_encounter():
         hidden_path()
     elif choice.lower() == "no":
         print("You politely decline. The wizard wishes you luck and disappears.")
-        # Add more logic here later for the path without the map
+        print("You continue your journey but quickly find yourself lost. Game Over.")
+        restart_game()
     else:
         print("Invalid choice. Please type 'yes' or 'no'.")
         wizard_encounter()  # Ask again
@@ -53,7 +56,7 @@ def first_choice():
         wizard_encounter() # Goes to wizard encounter if "left"
     elif choice.lower() == "right":
         print("A wild, ferocious bear blocks your path! Game Over.")
-        # Add logic here for bear encounter.
+        restart_game()
     else:
         print("Invalid choice. Please type 'left' or 'right'.")
         first_choice() # Ask again
